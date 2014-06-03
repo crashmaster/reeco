@@ -1,5 +1,5 @@
 MKFILE_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-SDIST_DIRECTORY := $(realpath $(addprefix $(MKFILE_DIR), sdist))
+SDIST_DIRECTORY := $(addprefix $(MKFILE_DIR), sdist)
 
 CREATE_SDIST := python setup.py --quiet sdist
 
